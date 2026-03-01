@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python quick_commit.py --help)",
+      "Bash(python quick_commit.py)",
+      "Bash(python -c \"import quick_commit; print\\(''模块导入成功!''\\)\")"
+    ]
+  }
+}

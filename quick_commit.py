@@ -2,6 +2,8 @@
 """
 一键提交脚本 - 快速提交并推送代码变更
 
+版本：1.0
+
 功能：
 1. 检查 git 状态并显示变更
 2. 显示完整 diff 供用户审查
@@ -21,7 +23,9 @@ def run_command(command: List[str], capture: bool = True) -> subprocess.Complete
             command,
             capture_output=capture,
             text=True,
-            check=False
+            check=False,
+            encoding='utf-8',
+            errors='replace'
         )
         return result
     except Exception as e:
